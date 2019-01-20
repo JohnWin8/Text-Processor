@@ -1,0 +1,20 @@
+How to use:
+
+You issue a command of the form source-file list-of-decorators. If source-file is stdin, then
+input should be taken from cin.
+
+Ex. sample.txt doublewords dropfirst 2 count l
+
+It thens creates a list of text-processors from the ones you give it, and applies each of them
+ to the text inside source-file
+
+Possible text-processors;
+
+1. dropfirst n 
+	Removes first n chars from each work, or removes the word if n is larger than the string length
+2. double words
+	Doubles each word in the string
+3. allcaps
+	All letters become uppercase
+4. count c
+	The first occurance of char c is replaced with the number 1, then 2 etc.
